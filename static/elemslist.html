@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <body background="background.jpg">
+    <div class="card">
+      <form style="display: inline;" action="/paste" method="post">
+        <button type="submit" style="float: left; background-color: #d580ff; display: inline;">paste</button>
+      </form>
+      <form action="/up" method="post" enctype="multipart/form-data">
+        <input name="file_name" type="text" placeholder="File Name" />
+        <input type="file" name="file">
+        <button style="display: inline;" type="submit" >Upload</button>
+      </form>
+      <br>
+      <h1 class = "card">Your files</h1>
+      <form action="/newfolder" method="post">
+        <img src="newfolder.png" style="width: 20px; height: 20px; ">
+        <input style="display: inline;" type="text" name="newfolder" placeholder="folder name">
+        <input type="submit" value="Submit">
+      </form>
+      <!--new element-->
+      <br />
+      
+    </div>
+    <div class="undercard">
+      <a href="/logout">logout</a>
+     </div>
+  </body>
+</html>
+
+
+<style type="text/css">
+  body {
+
+    background-color: #79589f;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center ;
+
+    display : flex ;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    border: 10 px;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 40px 50px;
+
+    border-radius: 15px;
+}
+.card h1{
+  margin-top: -3px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: Manjari Bold;
+    font-weight: 200;
+    line-height: 1.1;
+    color: #79589f;
+}
+input{
+  margin-top: -3px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Manjari Bold;
+    font-weight: 200;
+    line-height: 1.1;
+    color: #79589f;
+}
+button{
+  font-family: Manjari Bold;
+  font-size: 18px;
+}
+</style>

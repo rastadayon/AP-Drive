@@ -1,0 +1,22 @@
+#ifndef __EXCEPTION_H__
+#define __EXCEPTION_H__
+#include <iostream>
+class cant_add_user_now{};
+class invalid_data_format{};
+class repeated_username{};
+class cant_login_now{};
+class invalid_username_or_pass{};
+class no_user_logged_in{};
+class invalid_group_name{};
+class user_doesnt_exist{};
+class group_doesnt_exist{};
+class something_went_wrong{};
+class invalid_folder_name{};
+class invalid_path{};
+class path_not_for_folder{};
+class source_doesnt_exist{};
+class user_no_access{};
+class element_not_file_type{};
+class cant_demote{};
+class user_not_superuser{};
+#endif

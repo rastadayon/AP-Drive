@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APdrive</title>
+    </head>
+    <body background="background.jpg">
+    <div class="card">
+        <h3>Add a new user</h3>
+        <form action="/adduser" method="post">
+          <var id="Message"></var>
+            <div class="user">
+                    <i class="fas fa-users"></i>
+                    <input name="username" type="text" placeholder="Username">
+            </div>
+            <div class="user">
+              <i class="fas fa-key"></i>
+              <input  name="password" type="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn">Add user</button>
+        </form> 
+    </div>
+    <div class="undercard">
+      <a href="/logout">logout</a>
+    </div>
+    </body>
+
+</html>
+<style type="text/css">
+    body {
+
+    background-color: #79589f;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center ;
+
+    display : flex ;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    border: 10 px;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 40px 50px;
+
+    border-radius: 15px;
+}
+.card h3 {
+            margin-top: -3px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: Manjari Bold
+            font-weight: 200;
+            line-height: 1.1;
+            color: #79589f;
+}
+.card form  {
+    margin: auto;
+    padding: 34px;
+
+}
+.card input{
+
+    border: 0;
+}
+.card input:focus{
+    outline: none;
+
+}
+
+.btn{
+
+    display: block;
+    background: #79589f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all .6s;
+    text-align: center;
+}
+
+.btn:active{
+    background: #5f467e;
+}
+
+.user{
+    
+    margin: 20px auto;
+    border: 1px solid #cbcbd2;
+    padding: 6px 14px;
+    border-radius: 4px;
+    color: #3f3f44;
+
+    display: flex;
+}
+
+.user input{
+
+    flex-grow: 1;
+    padding: 10px 25px;
+
+}
+.user i{
+
+padding-left: 12px;
+padding-top: 10px  
+
+}
+
+</style>
+
